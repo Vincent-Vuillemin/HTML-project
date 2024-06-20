@@ -4,39 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/bookingMenuStyle.css">
-    <link rel="shortcut icon" href="./assets/imgs/tab-logo.png" />
-    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
     <script
       src="https://kit.fontawesome.com/46d471f65c.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/bookingMenuStyle.css">
+    <link rel="shortcut icon" href="./assets/imgs/tab-logo.png" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
     <title>Easy jet</title>
   </head>
   <body>
     <header>
       <div>
+        <i class="fa-solid fa-bars phone-display white-icon"></i>
         <img src="./assets/imgs/ej-title.png" alt="esayjet-logo" />
-        <a href="http://lienbidon">Infos de vol</a>
-        <a href="http://toujoursunlienbidon">Voitures/Autres services</a>
-        <a href="http://bidon">Business</a>
-        <a href="http://ultrabidon">Hôtels</a>
-        <a href="http://encoreplusbidon">Mes réservations</a>
+        <a href="http://lienbidon" class="hidden-1115">Infos de vol</a>
+        <a href="http://toujoursunlienbidon"class="hidden-1115">Voitures/Autres services</a>
+        <a href="http://bidon"class="hidden-1115">Business</a>
+        <a href="http://ultrabidon"class="hidden-1115">Hôtels</a>
+        <a href="http://encoreplusbidon"class="hidden-1115">Mes réservations</a>
       </div>
       <div>
-        <button>S'enregister</button>
-        <a href="http://bullshit">Se connecter</a>
-        <a href="http://toujoursdubullshitenlien">Aide</a>
-        <a href="http://nimpenlien">fr-FR</a
-        ><img src="./assets/imgs/drapeau.png" alt="flag" />
+        <button class="hidden-670">S'enregister</button>
+        <div class="signup-div white-icon phone-display">
+          <i class="fa-regular fa-circle-user"></i>
+          <a href="http://bullshit">Se connecter</a>
+        </div>
+        <a href="http://toujoursdubullshitenlien" class="hidden-670">Aide</a>
+        <a href="http://nimpenlien" class="hidden-670">fr-FR</a
+        ><img src="./assets/imgs/drapeau.png" alt="flag" class="hidden-670"/>
       </div>
     </header>
     <main>
       <section class="beach-section">
-        <img src="./assets/imgs/beach.jpg" alt="backround-plage" />
+        <img src="./assets/imgs/beach.jpg" alt="backround-plage" class="visibility-hidden"/>
         <div class="beach-absolute">
-          <div class="container bookingmenu-container">
+          <div class="container bookingmenu-container .hidden-670">
             <section class="booking-menu">
               <div class="checkbox">
                 <input type="checkbox" id="checkbox"/><label for="checkbox">Aller simple</label>
@@ -88,7 +92,7 @@
               </div>
               
             </section>
-            <div class="left-column">
+            <div class="left-column hidden-670">
               <p class="left-column-title">NAGER. DORMIR. MANGER. RECOMMENCER</p>
               <p>Cet été détentez-vous à la plage : Baléares, Sardaigne, Sicile ... Vous avez le choix !</p>
               <div>
@@ -100,26 +104,30 @@
           </div>
         </div>
         <div class="beach-white-absolute">
-          <div class="container container-white-bar">
+          <div class="container container-white-bar .hidden-670">
             <div class="offers">
-              <div>
-                <p>Lisbonne</p>
-                <p>à partir de Paris CDG 22€ nov 2024</p>
+              <div class="offer">
+                <p>Séoul</p>
+                <p>à partir de Paris CDG</p> 
+                <p></p>22€ nov 2024</p>
                 <button>Réservez</button>
               </div>
-              <div>
-                <p>Lisbonne</p>
-                <p>à partir de Paris CDG 22€ nov 2024</p>
+              <div class="offer hidden-670">
+                <p>Tokyo</p>
+                <p>à partir de Paris CDG</p> 
+                <p></p>22€ nov 2024</p>
                 <button>Réservez</button>
               </div>
-              <div>
-                <p>Lisbonne</p>
-                <p>à partir de Paris CDG 22€ nov 2024</p>
+              <div class="offer">
+                <p>Hanoî</p>
+                <p>à partir de Paris CDG</p> 
+                <p></p>22€ nov 2024</p>
                 <button>Réservez</button>
               </div>
-              <div>
+              <div class="hidden-1115 offer">
                 <p>Lisbonne</p>
-                <p>à partir de Paris CDG 22€ nov 2024</p>
+                <p>à partir de Paris CDG</p> 
+                <p></p>22€ nov 2024</p>
                 <button>Réservez</button>
               </div>
             </div>
@@ -139,7 +147,7 @@
           <button>En savoir plus</button>
         </div>
       </section>
-      <section class="carrousel-section container">
+      <section class="carrousel-section container .hidden-670">
         <div class="carrousel-card">
           <img src="./assets/imgs/carousel1.jpg" alt="woman looking" />
           <div>
@@ -240,7 +248,7 @@
           </div>
         </div>
       </section>
-      <section class="bottom-carrousel container">
+      <section class="bottom-carrousel container .hidden-670">
         <h3>Comment pouvons-nous vous aider?</h3>
         <menu>
           <div>
@@ -282,7 +290,7 @@
       <div class="container footer-div">
         <div>
           <p>Infos de vol</p>
-          <ul>
+          <ul class="hidden-670">
             <li>Flight Tracker</li>
             <li>Gérer les réservations</li>
             <li>Durabilité</li>
@@ -294,7 +302,7 @@
         </div>
         <div>
           <p>Service clientèle</p>
-          <ul>
+          <ul class="hidden-670">
             <li>Accessibilité</li>
             <li>La Charte du passager</li>
             <li>Aide</li>
@@ -306,7 +314,7 @@
 
         <div>
           <p>A propos d'Easy Jet</p>
-          <ul>
+          <ul class="hidden-670">
             <li>Carrières</li>
             <li>Informations sur la compagnie</li>
             <li>Esayjet Spirit</li>
@@ -316,7 +324,7 @@
 
         <div>
           <p>Termes et conditions</p>
-          <ul>
+          <ul class="hidden-670">
             <li>Politique d'utilisation acceptable</li>
             <li>Charte de distribution</li>
             <li>Suppléments et charges</li>
